@@ -12,6 +12,7 @@ BASIC USAGE
 
 set the REST endpoint in your Dancer configuration file:
 
+```yaml
     plugins:
       Model::REST:
         MyData:
@@ -19,9 +20,11 @@ set the REST endpoint in your Dancer configuration file:
                  type: application/json
           clientattrs:
                  timeout: 5
+```
 
 then use it from any of your routes/controllers:
 
+```perl
     use Dancer ':syntax';
     use Dancer::Plugin::Model::REST;
 
@@ -33,7 +36,7 @@ then use it from any of your routes/controllers:
 
         ...
     };
-
+```
 
 INSTALLATION
 ------------
