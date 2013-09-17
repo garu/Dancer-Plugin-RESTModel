@@ -45,10 +45,10 @@ set the REST endpoint in your Dancer configuration file:
     plugins:
       Model::REST:
         MyData:
-               server: http://localhost:5000
-                 type: application/json
+          server: http://localhost:5000
+          type: application/json
           clientattrs:
-                 timeout: 5
+            timeout: 5
 
 then use it from any of your routes/controllers:
 
