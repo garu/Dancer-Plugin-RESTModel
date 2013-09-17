@@ -1,7 +1,7 @@
 use Test::More tests => 1;
 
 BEGIN {
-use_ok( 'Dancer::Plugin::Model::REST' );
+use_ok( 'Dancer::Plugin::RESTModel' );
 }
 
-diag( "Testing Dancer::Plugin::Model::REST $Dancer::Plugin::Model::REST::VERSION" );
+diag( "Testing Dancer::Plugin::RESTModel $Dancer::Plugin::RESTModel::VERSION" );

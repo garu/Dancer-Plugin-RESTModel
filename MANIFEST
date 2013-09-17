@@ -1,6 +1,5 @@
 Changes
-lib/Dancer/Plugin/Model/.REST.pm.swp
-lib/Dancer/Plugin/Model/REST.pm
+lib/Dancer/Plugin/RESTModel.pm
 Makefile.PL
 MANIFEST			This list of files
 README

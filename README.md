@@ -1,4 +1,4 @@
-Dancer-Plugin-Model-REST
+Dancer-Plugin-RESTModel
 ========================
 
 This plugin lets you talk to a REST server as a separate model from within
@@ -14,7 +14,7 @@ set the REST endpoint in your Dancer configuration file:
 
 ```yaml
     plugins:
-      Model::REST:
+      RESTModel:
         MyData:
           server: http://localhost:5000
           type: application/json
@@ -26,7 +26,7 @@ then use it from any of your routes/controllers:
 
 ```perl
     use Dancer ':syntax';
-    use Dancer::Plugin::Model::REST;
+    use Dancer::Plugin::RESTModel;
 
     get '/' => sub {
         my $res = model('MyData')->post( 'foo/bar/baz', { meep => 'moop' } );
@@ -42,13 +42,13 @@ INSTALLATION
 ------------
 
     # from CPAN
-    $ cpan Dancer::Plugin::Model::REST
+    $ cpan Dancer::Plugin::RESTModel
 
     # from cpanm
-    $ cpanm Dancer::Plugin::Model::REST
+    $ cpanm Dancer::Plugin::RESTModel
 
     # cloning the repository
-    $ git clone git://github.com/EstanteVirtual/Dancer-Plugin-Model-REST.git
+    $ git clone git://github.com/EstanteVirtual/Dancer-Plugin-RESTModel.git
 
     # manual installation, after downloading
     perl Makefile.PL

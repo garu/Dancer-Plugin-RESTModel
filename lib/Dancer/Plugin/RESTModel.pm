@@ -1,4 +1,4 @@
-package Dancer::Plugin::Model::REST;
+package Dancer::Plugin::RESTModel;
 use strict;
 use warnings;
 
@@ -35,7 +35,7 @@ __END__
 
 =head1 NAME
 
-Dancer::Plugin::Model::REST - REST model class for Dancer apps
+Dancer::Plugin::RESTModel - REST model class for Dancer apps
 
 
 =head1 SYNOPSIS
@@ -43,7 +43,7 @@ Dancer::Plugin::Model::REST - REST model class for Dancer apps
 set the REST endpoint in your Dancer configuration file:
 
     plugins:
-      Model::REST:
+      RESTModel:
         MyData:
           server: http://localhost:5000
           type: application/json
@@ -53,7 +53,7 @@ set the REST endpoint in your Dancer configuration file:
 then use it from any of your routes/controllers:
 
     use Dancer ':syntax';
-    use Dancer::Plugin::Model::REST;
+    use Dancer::Plugin::RESTModel;
 
     get '/' => sub {
         my $res = model('MyData')->post( 'foo/bar/baz', { meep => 'moop' } );
@@ -131,7 +131,7 @@ extra information to the object. It currently provides
 =head1 BUGS AND LIMITATIONS
 
 Please report any bugs or feature requests to
-C<bug-dancer-plugin-model-rest@rt.cpan.org>, or through the web interface at
+C<bug-dancer-plugin-restmodel@rt.cpan.org>, or through the web interface at
 L<http://rt.cpan.org>.
 
 =head1 SEE ALSO
