@@ -71,7 +71,7 @@ This plugin lets you talk to a REST server as a separate model from within
 your Dancer app. It is useful for keeping your API decoupled from your app
 while still being able to manage it through the configuration file.
 
-It is a a thin wrapper over L<Role::REST::Client>.
+It is a thin wrapper over L<Role::REST::Client>.
 
 =head1 INTERFACE 
 
