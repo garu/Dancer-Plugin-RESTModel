@@ -9,7 +9,7 @@ use Dancer qw( :syntax :moose );
 use Dancer::Plugin;
 use Carp 'croak';
 
-our $VERSION = 0.01;
+our $VERSION = 0.02;
 
 my $schemas = {};
 
@@ -153,7 +153,7 @@ Breno G. de Oliveira  C<< <garu@cpan.org> >>
 
 =head1 LICENCE AND COPYRIGHT
 
-Copyright (c) 2013, Breno G. de Oliveira C<< <garu@cpan.org> >>. All rights reserved.
+Copyright (c) 2013-2014, Breno G. de Oliveira C<< <garu@cpan.org> >>. All rights reserved.
 
 This module is free software; you can redistribute it and/or
 modify it under the same terms as Perl itself. See L<perlartistic>.
