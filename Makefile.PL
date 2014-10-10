@@ -17,8 +17,8 @@ WriteMakefile(
     META_MERGE      => {
         resources => {
             license     => 'http://dev.perl.org/licenses/',
-            bugtracker  => 'http://rt.cpan.org/NoAuth/Bugs.html?Dist=Dancer-Plugin-RESTModel',
-            repository  => 'http://github.com/estantevirtual/Dancer-Plugin-RESTModel',
+            bugtracker  => 'https://github.com/garu/Dancer-Plugin-RESTModel/issues'
+            repository  => 'https://github.com/garu/Dancer-Plugin-RESTModel',
         },
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
